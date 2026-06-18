@@ -75,16 +75,32 @@
   }
 }
 
+@media (max-width: 768px) {
+  .banner-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 600px) {
   .banner-text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     width: auto;
+    z-index: 10;
   }
 }
