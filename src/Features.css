@@ -125,15 +125,39 @@
   }
 
   .features-center {
-    order: -1; /* Move center graphic to the top on mobile */
+    order: -1;
+    padding: 0;
   }
 
   .feature-item {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
   
   .feature-desc {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-section {
+    padding: 60px 20px;
+    overflow-x: hidden;
+  }
+
+  .organic-circle-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .organic-center-badge {
+    width: 140px;
+    height: 140px;
+  }
+
+  .organic-center-badge h3 {
+    font-size: 1.6rem;
   }
 }
