@@ -97,10 +97,20 @@
     left: auto;
     transform: none;
     margin: 0 20px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
     width: auto;
     z-index: 10;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-title {
+    text-align: center;
+  }
+  
+  .hero-description {
+    text-align: center;
   }
 }
