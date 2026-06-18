@@ -27,7 +27,10 @@ const Banner = () => {
     <div className="banner-wrapper">
       <section className="banner-section">
         {/* Background Image */}
-        <img src="/media/banner.jpeg" alt="Tasali Banner" className="banner-image" />
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/media/banner phone.png" />
+          <img src="/media/banner.jpeg" alt="Tasali Banner" className="banner-image" />
+        </picture>
         
         {/* Text Overlay inside the image */}
         <motion.div 

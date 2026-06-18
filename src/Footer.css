@@ -1,7 +1,7 @@
 .footer-section {
   background-color: #ffffff;
   color: #111111;
-  padding: 80px 20px 40px;
+  padding: 50px 20px 20px;
   width: 100%;
   border-top: 1px solid #eaeaea;
 }
@@ -16,8 +16,8 @@
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-brand {
@@ -27,19 +27,17 @@
   padding-right: 40px;
 }
 
-.footer-logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  color: #22c55e; /* Light Green */
-  margin-bottom: 15px;
-  letter-spacing: -1px;
+.footer-logo-img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply; /* In case logo has weird white background border */
 }
 
 .footer-desc {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: #555555;
 }
 
@@ -47,7 +45,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #22c55e; /* Light Green */
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -59,13 +57,13 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .footer-list li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555555;
   transition: color 0.2s ease;
 }
@@ -77,18 +75,18 @@
 
 .contact-list li {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #333333;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 40px;
+  padding-top: 20px;
   border-top: 1px solid #eaeaea;
 }
 

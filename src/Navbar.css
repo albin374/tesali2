@@ -1,0 +1,79 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0; /* No padding to bring it to the very top */
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures everything is on the same line */
+}
+
+.navbar-logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Explicitly align logo */
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  max-height: 100px; /* Increased size */
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply; /* Removes any white background from the logo */
+}
+
+.navbar-spacer {
+  flex: 1;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #22c55e;
+}
+
+.navbar-white-text .navbar-menu li a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.navbar-white-text .navbar-menu li a:hover {
+  color: #22c55e;
+}
+
+
+
+@media (max-width: 900px) {
+  .navbar-menu {
+    display: none;
+  }
+}

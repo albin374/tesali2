@@ -1,0 +1,91 @@
+.supplier-promos-section {
+  padding: 0px 5% 80px;
+  background-color: #ffffff;
+}
+
+.supplier-promos-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.supplier-card {
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.3s ease;
+  min-height: 140px;
+}
+
+.supplier-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-blue {
+  background-color: #eef2ff; /* Very pale blue */
+}
+
+.card-yellow {
+  background-color: #fff8e1; /* Very pale yellow */
+}
+
+.card-green {
+  background-color: #e6fffa; /* Very pale green/mint */
+}
+
+.supplier-img-box {
+  flex: 0 0 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supplier-img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: brightness(1.05) contrast(1.15);
+}
+
+.supplier-text-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.supplier-text-box h3 {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.supplier-text-box a {
+  font-family: 'Inter', sans-serif;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.supplier-text-box a:hover {
+  color: #1e293b;
+}
+
+@media (max-width: 1024px) {
+  .supplier-promos-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

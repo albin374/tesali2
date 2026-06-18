@@ -8,7 +8,7 @@ const Footer = () => {
         
         <div className="footer-top">
           <div className="footer-brand">
-            <h2 className="footer-logo">Tasali Supermarket</h2>
+            <img src="/media/footer logo.png" alt="Tasali Supermarket" className="footer-logo-img" />
             <p className="footer-desc">
               Your trusted neighborhood supermarket in Al Jurf, Ajman. Enjoy fresh products, affordable prices, and fast free home delivery.
             </p>

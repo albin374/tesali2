@@ -1,19 +1,24 @@
 import React from 'react'
-import Banner from './Banner'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './Navbar'
+import Home from './Home'
 import AboutUs from './AboutUs'
-import Products from './Products'
-import Promotions from './Promotions'
+import AllProducts from './AllProducts'
+import ContactUs from './ContactUs'
 import Footer from './Footer'
 
 function App() {
   return (
-    <>
-      <Banner />
-      <AboutUs />
-      <Products />
-      <Promotions />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/products" element={<AllProducts />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 

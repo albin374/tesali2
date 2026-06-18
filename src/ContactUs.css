@@ -1,0 +1,201 @@
+.contact-banner-section {
+  width: 100%;
+  background-color: #e6f7eb; /* Soft green background */
+  padding: 40px 5% 0px; /* Removed bottom padding */
+  display: flex;
+  align-items: flex-end; /* Aligns the image to sit on the bottom edge */
+  overflow: hidden;
+}
+
+.contact-banner-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left Column */
+.contact-text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.contact-tag {
+  background-color: #fff1f2;
+  color: #fb7185;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #111;
+  margin: 0 0 40px 0;
+  letter-spacing: -2px;
+}
+
+.text-orange {
+  color: #f97316;
+  font-weight: 800;
+}
+
+.text-black {
+  color: #111;
+  font-weight: 800;
+}
+
+.text-green {
+  color: #22c55e; /* Tasali brand green */
+}
+
+.text-green-bold {
+  color: #22c55e;
+  font-weight: 800;
+}
+
+.contact-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  border-radius: 50px;
+  padding: 8px;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 50px;
+}
+
+.contact-search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-search-bar input::placeholder {
+  color: #888;
+}
+
+.search-btn {
+  background-color: #f97316;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+}
+
+.happy-customers {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.customer-avatars {
+  display: flex;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-left: -15px;
+}
+
+.avatar:first-child { margin-left: 0; }
+.bg-red { background-color: #ef4444; }
+.bg-yellow { background-color: #eab308; }
+.bg-blue { background-color: #3b82f6; }
+
+.customer-text h4 {
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.customer-text p {
+  font-family: 'Inter', sans-serif;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Right Column */
+.contact-image-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.contact-main-img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 550px;
+  object-fit: contain;
+  /* if contact.png has white bg, multiply it. Otherwise, normal */
+  mix-blend-mode: multiply;
+  filter: brightness(1.05);
+}
+
+.contact-map-section {
+  padding: 0 5% 100px;
+  background-color: #f8fafc;
+}
+
+.contact-map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-map-container iframe {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .contact-banner-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 60px;
+  }
+  .contact-text-column {
+    align-items: center;
+  }
+  .contact-title {
+    font-size: 3.5rem;
+  }
+}
