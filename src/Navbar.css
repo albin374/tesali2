@@ -14,7 +14,9 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensures everything is on the same line */
+  align-items: center;
+  position: relative;
+  z-index: 1001;
 }
 
 .navbar-logo-container {
@@ -92,15 +94,16 @@
   }
 
   .mobile-menu {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 20px 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b4b3c;
+    box-shadow: none;
+    padding-top: 150px;
     z-index: 999;
-    border-top: 1px solid #f0f0f0;
+    border-top: none;
   }
 
   .mobile-menu-links {
@@ -116,9 +119,9 @@
   .mobile-menu-links li a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    color: #333;
+    color: #ffffff;
     font-weight: 600;
-    font-size: 1.15rem;
+    font-size: 1.6rem;
   }
 
   .mobile-menu-links li a:hover {

@@ -1,7 +1,7 @@
 .contact-banner-section {
   width: 100%;
   background-color: #38be64;
-  padding: 40px 5% 0px;
+  padding: 130px 5% 0px; /* Increased top padding to clear the navbar logo */
   display: flex;
   align-items: flex-end; /* Aligns the image to sit on the bottom edge */
   overflow: hidden;

@@ -96,7 +96,8 @@
   .banner-section {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 80px;
   }
   .banner-image {
     position: absolute;
