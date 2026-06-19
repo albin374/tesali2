@@ -112,22 +112,28 @@
 
 @media (max-width: 600px) {
   .banner-text-overlay {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: none;
-    margin: 0 20px;
-    padding: 0;
-    background: none;
-    border-radius: 0;
-    width: auto;
-    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 20px 80px;
+    box-sizing: border-box;
     align-items: center;
     text-align: center;
   }
   
+  .hero-tagline {
+    margin-bottom: auto; /* Pushes the rest to the bottom */
+  }
+  
   .hero-title {
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .hero-description {

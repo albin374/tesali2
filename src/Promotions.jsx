@@ -47,12 +47,12 @@ const Promotions = () => {
         >
           {/* Card 1 */}
           <motion.div variants={itemVariants} className="promo-card card-green">
-            <h3 className="promo-card-title">NEW HERE? ENJOY 10% OFF<br/>YOUR FIRST ORDER</h3>
+            <h3 className="promo-card-title">THE FUTURE IS IN<br/>YOUR HANDS</h3>
             <div className="promo-blob-container">
-              <img src="/media/promo_meat.png" alt="Promo 1" />
+              <img src="/media/promo_audio.png" alt="Tech Essentials" />
             </div>
             <div className="promo-card-footer">
-              <p>Sign up today and get instant savings on your first grocery purchase.</p>
+              <p>Explore cutting-edge electronics and must-have tech essentials.</p>
             </div>
           </motion.div>
 
