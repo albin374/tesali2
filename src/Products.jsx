@@ -14,7 +14,9 @@ const categories = [
   { name: 'Rice & Flour', img: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
   { name: 'Personal Care', img: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
   { name: 'Stationary', img: '/media/stationary.jpeg', bgColor: '#fff8e1' },
-  { name: 'Frozen Foods', img: '/media/frozenFoods.png', bgColor: '#eff6ff' }
+  { name: 'Frozen Foods', img: '/media/frozenFoods.png', bgColor: '#eff6ff' },
+  { name: 'Electronics', img: '/media/Electronics.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Toys', img: '/media/toys.jpeg', bgColor: '#dcfce7' }
 ];
 
 const Products = () => {

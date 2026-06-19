@@ -25,7 +25,9 @@ const categories = [
   { name: 'Rice & Flour', src: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
   { name: 'Personal Care', src: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
   { name: 'Stationary', src: '/media/stationary.jpeg', bgColor: '#fff8e1' },
-  { name: 'Frozen Foods', src: '/media/frozenFoods.png', bgColor: '#eff6ff' }
+  { name: 'Frozen Foods', src: '/media/frozenFoods.png', bgColor: '#eff6ff' },
+  { name: 'Electronics', src: '/media/Electronics.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Toys', src: '/media/toys.jpeg', bgColor: '#dcfce7' }
 ];
 
 const pastelColors = [
@@ -68,6 +70,8 @@ const AllProducts = () => {
   const drinkNames = ["water bottle", "orange juice", "apple juice", "cola", "soda", "lemonade", "iced tea", "coffee cup", "espresso", "latte", "cappuccino", "hot chocolate", "smoothie", "milkshake", "energy drink", "sports drink", "green tea", "black tea", "sparkling water", "coconut water"];
   const riceNames = ["rice bowl", "flour sack", "basmati rice", "brown rice", "jasmine rice", "wheat flour", "corn flour", "rice flour", "almond flour", "coconut flour", "quinoa", "couscous", "barley", "millet", "buckwheat", "bulgur", "semolina", "tapioca", "rye flour", "cornmeal"];
   const frozenNames = ["frozen pizza", "frozen peas", "frozen berries", "fish sticks", "frozen french fries", "frozen dumplings", "frozen waffle", "frozen dinner"];
+  const electronicsNames = ["headphones", "smartphone", "laptop", "smartwatch", "camera", "tablet", "speaker", "television", "mouse", "keyboard", "charger", "power bank", "earbuds", "drone", "monitor"];
+  const toysNames = ["lego", "action figure", "teddy bear", "doll", "puzzle", "toy car", "board game", "building blocks", "toy train", "yoyo", "rubiks cube", "stuffed animal"];
 
   const handleCategoryClick = async (categoryName) => {
     setSelectedCategory(categoryName);
@@ -87,6 +91,8 @@ const AllProducts = () => {
     else if (categoryName === 'Soft Drinks & Juices') itemsToFetch = drinkNames;
     else if (categoryName === 'Rice & Flour') itemsToFetch = riceNames;
     else if (categoryName === 'Frozen Foods') itemsToFetch = frozenNames;
+    else if (categoryName === 'Electronics') itemsToFetch = electronicsNames;
+    else if (categoryName === 'Toys') itemsToFetch = toysNames;
 
     if (itemsToFetch.length > 0) {
       setLoading(true);
