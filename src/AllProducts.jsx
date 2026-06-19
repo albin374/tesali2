@@ -24,7 +24,8 @@ const categories = [
   { name: 'Snacks & Chocolates', src: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
   { name: 'Rice & Flour', src: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
   { name: 'Personal Care', src: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
-  { name: 'Stationary', src: '/media/stationary.jpeg', bgColor: '#fff8e1' }
+  { name: 'Stationary', src: '/media/stationary.jpeg', bgColor: '#fff8e1' },
+  { name: 'Frozen Foods', src: '/media/frozenFoods.png', bgColor: '#eff6ff' }
 ];
 
 const pastelColors = [
@@ -37,20 +38,27 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const vegNames = [
-    "carrot", "potato", "tomato", "onion", "cabbage", 
-    "broccoli", "spinach", "cucumber", "bell pepper", "garlic", 
-    "ginger", "eggplant", "zucchini", "lettuce", "radish", 
-    "celery", "asparagus", "cauliflower", "peas", "green beans",
-    "sweet potato", "pumpkin", "beetroot", "mushroom"
-  ];
-
-  const fruitNames = [
-    "apple", "banana", "orange", "mango", "strawberry", 
-    "grapes", "watermelon", "pineapple", "peach", "cherry", 
-    "kiwi", "blueberry", "pear", "plum", "pomegranate", 
-    "lemon", "papaya", "avocado", "raspberry", "blackberry",
-    "coconut", "fig", "guava", "apricot"
+  const localFruitsAndVeg = [
+    { name: "Apple", url: "/media/fruits and vegitables/apple.jpg" },
+    { name: "Banana", url: "/media/fruits and vegitables/banana.png" },
+    { name: "Orange", url: "/media/fruits and vegitables/orange.png" },
+    { name: "Mango", url: "/media/fruits and vegitables/mango.jpg" },
+    { name: "Pineapple", url: "/media/fruits and vegitables/Pineapple.webp" },
+    { name: "Grapes", url: "/media/fruits and vegitables/Grapes.jpg" },
+    { name: "Watermelon", url: "/media/fruits and vegitables/Watermelon.jpg" },
+    { name: "Papaya", url: "/media/fruits and vegitables/Papaya.webp" },
+    { name: "Guava", url: "/media/fruits and vegitables/Guava.png" },
+    { name: "Pomegranate", url: "/media/fruits and vegitables/Pomegranate.avif" },
+    { name: "Potato", url: "/media/fruits and vegitables/potato.png" },
+    { name: "Tomato", url: "/media/fruits and vegitables/tomato.png" },
+    { name: "Onion", url: "/media/fruits and vegitables/onion.png" },
+    { name: "Carrot", url: "/media/fruits and vegitables/carrot.png" },
+    { name: "Cabbage", url: "/media/fruits and vegitables/cabbage.png" },
+    { name: "Cauliflower", url: "/media/fruits and vegitables/cauliflower.png" },
+    { name: "Broccoli", url: "/media/fruits and vegitables/broccoli.png" },
+    { name: "Spinach", url: "/media/fruits and vegitables/spinach.png" },
+    { name: "Cucumber", url: "/media/fruits and vegitables/cucumber.png" },
+    { name: "Beetroot", url: "/media/fruits and vegitables/beetroot.png" }
   ];
 
   const groceryNames = ["olive oil", "pasta", "spices", "canned beans", "ketchup", "salt", "sugar", "honey jar", "vinegar", "peanut butter", "cereal", "oats", "soy sauce", "mayonnaise", "mustard", "jam", "chickpeas", "lentils", "noodles", "tea bags"];
@@ -59,18 +67,26 @@ const AllProducts = () => {
   const snackNames = ["potato chips", "popcorn", "chocolate bar", "candy", "cookies", "crackers", "nachos", "trail mix", "granola bar", "gummy bears", "jelly beans", "marshmallow", "mixed nuts", "almonds", "cashews", "pistachios", "walnuts", "peanuts", "sunflower seeds", "biscuit"];
   const drinkNames = ["water bottle", "orange juice", "apple juice", "cola", "soda", "lemonade", "iced tea", "coffee cup", "espresso", "latte", "cappuccino", "hot chocolate", "smoothie", "milkshake", "energy drink", "sports drink", "green tea", "black tea", "sparkling water", "coconut water"];
   const riceNames = ["rice bowl", "flour sack", "basmati rice", "brown rice", "jasmine rice", "wheat flour", "corn flour", "rice flour", "almond flour", "coconut flour", "quinoa", "couscous", "barley", "millet", "buckwheat", "bulgur", "semolina", "tapioca", "rye flour", "cornmeal"];
+  const frozenNames = ["frozen pizza", "frozen peas", "frozen berries", "fish sticks", "frozen french fries", "frozen dumplings", "frozen waffle", "frozen dinner"];
 
   const handleCategoryClick = async (categoryName) => {
     setSelectedCategory(categoryName);
     
     let itemsToFetch = [];
-    if (categoryName === 'Fruits & Vegetables') itemsToFetch = [...fruitNames, ...vegNames];
+    if (categoryName === 'Fruits & Vegetables') {
+      setProducts(localFruitsAndVeg);
+      setTimeout(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }, 100);
+      return;
+    }
     else if (categoryName === 'Groceries') itemsToFetch = groceryNames;
     else if (categoryName === 'Dairy & Eggs') itemsToFetch = dairyNames;
     else if (categoryName === 'Bread & Bakery') itemsToFetch = bakeryNames;
     else if (categoryName === 'Snacks & Chocolates') itemsToFetch = snackNames;
     else if (categoryName === 'Soft Drinks & Juices') itemsToFetch = drinkNames;
     else if (categoryName === 'Rice & Flour') itemsToFetch = riceNames;
+    else if (categoryName === 'Frozen Foods') itemsToFetch = frozenNames;
 
     if (itemsToFetch.length > 0) {
       setLoading(true);
@@ -128,13 +144,13 @@ const AllProducts = () => {
       {/* Dynamic Products Grid Section */}
       {selectedCategory && (
         <div className="dynamic-products-section" style={{ padding: '80px 5%', maxWidth: '1400px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '3rem', textAlign: 'center', marginBottom: '50px', fontFamily: 'Outfit, sans-serif', color: '#111' }}>
+          <h2 style={{ fontSize: '3rem', textAlign: 'center', marginBottom: '50px', fontFamily: 'Outfit, sans-serif', color: '#ffffff' }}>
             {selectedCategory} Collection
           </h2>
           
           {loading ? (
             <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#666', fontFamily: 'Inter, sans-serif' }}>
-              Loading 20+ items directly from Unsplash...
+              Loading items from Unsplash...
             </div>
           ) : products.length === 0 ? (
             <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#ff4d4f', fontFamily: 'Inter, sans-serif', padding: '40px' }}>
@@ -154,8 +170,7 @@ const AllProducts = () => {
                   viewport={{ once: true }}
                   transition={{ delay: (i % 10) * 0.05, duration: 0.4 }}
                   style={{
-                    backgroundColor: pastelColors[i % pastelColors.length],
-                    borderRadius: '16px',
+                    backgroundColor: 'transparent',
                     padding: '30px 20px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -188,9 +203,7 @@ const AllProducts = () => {
                       style={{ 
                         maxWidth: '90%', 
                         maxHeight: '130px', 
-                        objectFit: 'contain',
-                        borderRadius: '8px',
-                        mixBlendMode: 'multiply'
+                        objectFit: 'contain'
                       }} 
                     />
                   </div>
@@ -200,7 +213,7 @@ const AllProducts = () => {
                     fontSize: '1.2rem', 
                     fontFamily: 'Inter, sans-serif', 
                     fontWeight: 700,
-                    color: '#111' 
+                    color: '#ffffff' 
                   }}>
                     {item.name}
                   </h3>
@@ -282,7 +295,7 @@ const Carousel_001 = ({
           <SwiperSlide 
             key={index} 
             className="carousel-slide" 
-            style={{ backgroundColor: image.bgColor, cursor: 'pointer' }}
+            style={{ backgroundColor: 'transparent', cursor: 'pointer' }}
             onClick={() => onCategoryClick && onCategoryClick(image.name)}
           >
             <img

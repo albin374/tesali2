@@ -8,7 +8,7 @@ const Footer = () => {
         
         <div className="footer-top">
           <div className="footer-brand">
-            <img src="/media/footer logo.png" alt="Tasali Supermarket" className="footer-logo-img" />
+            <img src="/media/footer_logo-removebg-preview.png" alt="Tasali Supermarket" className="footer-logo-img" />
             <p className="footer-desc">
               Your trusted neighborhood supermarket in Al Jurf, Ajman. Enjoy fresh products, affordable prices, and fast free home delivery.
             </p>
@@ -38,8 +38,8 @@ const Footer = () => {
             <h3 className="footer-heading">Contact Us</h3>
             <ul className="footer-list contact-list">
               <li>📍 Al Jurf, Ajman, UAE</li>
-              <li>📞 +971 50 123 4567</li>
-              <li>✉️ info@tasali.com</li>
+              <li>📞 +971 55 364 1135</li>
+              <li>✉️ reach@tasali.ae</li>
             </ul>
           </div>
         </div>

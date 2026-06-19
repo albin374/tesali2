@@ -38,7 +38,7 @@ const ContactForm = () => {
               <div className="detail-icon">✉️</div>
               <div className="detail-text">
                 <h4>Email Address</h4>
-                <p>info@tasalisupermarket.com</p>
+                <p>reach@tasali.ae</p>
               </div>
             </div>
 

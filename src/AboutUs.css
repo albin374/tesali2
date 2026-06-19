@@ -1,7 +1,6 @@
 .about-showcase-section {
   padding: 100px 20px;
-  background-color: #ffffff;
-  /* pure white */
+  background-color: #000000;
   width: 100%;
 }
 
@@ -25,9 +24,8 @@
   max-width: 650px;
   height: auto;
   object-fit: contain;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
   filter: brightness(1.05) contrast(1.1);
-  /* Blows out the faint grey background to pure white */
   /* Gentle floating animation */
   animation: floatVeggies 6s ease-in-out infinite;
 }
@@ -66,7 +64,7 @@
 }
 
 .showcase-title {
-  color: #1a1a1a;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 4rem;
@@ -76,7 +74,7 @@
 }
 
 .showcase-description {
-  color: #777;
+  color: #cccccc;
   font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   line-height: 1.6;
@@ -97,7 +95,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #666;
+  color: #cccccc;
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
@@ -142,7 +140,7 @@
 /* Promotional Grid Section */
 .about-promo-section {
   padding: 60px 5%;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .about-promo-container {
@@ -207,11 +205,19 @@
 
 .promo-content-top {
   justify-content: flex-start;
-  padding-top: 10px;
+  padding-top: 0;
+  margin-top: -15px;
 }
 
 .promo-content-center {
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 0;
+  margin-top: -15px;
+}
+
+.promo-content-bottom {
+  justify-content: flex-end;
+  padding-bottom: 90px;
 }
 
 .text-center {
@@ -222,25 +228,30 @@
 .text-right {
   text-align: right;
   align-items: flex-end;
+  padding-right: 0;
+  margin-right: -10px;
 }
 
 .text-left {
   text-align: left;
   align-items: flex-start;
+  padding-left: 0;
+  margin-left: -10px;
 }
 
 .promo-subtitle {
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
-  color: #333;
+  color: #1a531b;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .promo-title {
   font-family: 'Outfit', sans-serif;
   font-size: 1.6rem;
-  font-weight: 700;
-  color: #111;
+  font-weight: 800;
+  color: green;
   margin: 0 0 15px 0;
   line-height: 1.2;
 }
@@ -256,12 +267,12 @@
 .promo-link {
   font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #111;
+  font-weight: 700;
+  color: green;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 1px solid #111;
+  border-bottom: 2px solid green;
   padding-bottom: 2px;
   transition: color 0.3s ease, border-color 0.3s ease;
   display: inline-block;
@@ -275,7 +286,7 @@
 /* Why Choose Us Section */
 .about-choose-section {
   padding: 80px 5%;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .about-choose-container {
@@ -307,7 +318,7 @@
 
 .choose-content h2 {
   font-family: 'Inter', sans-serif;
-  color: #111;
+  color: #ffffff;
   font-size: 3rem;
   font-weight: 800;
   margin: 0 0 50px 0;
@@ -324,7 +335,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #f8fafc;
+  background-color: #111111;
   padding: 15px 20px;
   border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -349,7 +360,7 @@
 
 .choose-feature-item h4 {
   font-family: 'Inter', sans-serif;
-  color: #111;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;

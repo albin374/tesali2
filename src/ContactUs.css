@@ -163,14 +163,13 @@
   max-width: 500px;
   max-height: 550px;
   object-fit: contain;
-  /* if contact.png has white bg, multiply it. Otherwise, normal */
   mix-blend-mode: multiply;
   filter: brightness(1.05);
 }
 
 .contact-map-section {
   padding: 0 5% 100px;
-  background-color: #f8fafc;
+  background-color: #000000;
 }
 
 .contact-map-container {

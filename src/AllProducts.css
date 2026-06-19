@@ -1,5 +1,5 @@
 .products-page-wrapper {
-  background-color: #f8fafc;
+  background-color: #000000;
   min-height: 100vh;
   padding-bottom: 80px;
 }
@@ -77,7 +77,6 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +86,6 @@
   max-width: 100%;
   object-fit: contain;
   margin-bottom: 30px;
-  mix-blend-mode: multiply;
   filter: contrast(1.1);
 }
 
@@ -95,7 +93,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #111;
+  color: #ffffff;
   text-align: center;
   margin: 0;
 }

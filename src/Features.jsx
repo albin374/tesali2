@@ -10,11 +10,11 @@ const Features = () => {
         <div className="features-column left-column">
           <div className="feature-item">
             <div className="feature-icon-circle">
-              <span className="icon">🎧</span>
+              <span className="icon">🍎</span>
             </div>
             <div className="feature-text">
-              <h4 className="feature-title">24 X 7 Free Support</h4>
-              <p className="feature-desc">We are always here to help! Reach out to our customer support team anytime for assistance with your orders.</p>
+              <h4 className="feature-title">Fresh Products</h4>
+              <p className="feature-desc">We guarantee the highest quality fresh fruits, vegetables, and daily essentials sourced directly for you.</p>
             </div>
           </div>
           <div className="feature-item">
@@ -31,11 +31,7 @@ const Features = () => {
         {/* Center Image */}
         <div className="features-center">
           <div className="organic-circle-wrapper">
-            <img src="/media/floating_veggies.png" alt="Organic Vegetables" className="organic-bg-img" />
-            <div className="organic-center-badge">
-              <span className="organic-leaf">🌿</span>
-              <h3>organic</h3>
-            </div>
+            <img src="/media/oraganic.png" alt="Organic Vegetables" className="organic-bg-img" />
           </div>
         </div>
 
@@ -43,11 +39,11 @@ const Features = () => {
         <div className="features-column right-column">
           <div className="feature-item">
             <div className="feature-icon-circle">
-              <span className="icon">💲</span>
+              <span className="icon">🏷️</span>
             </div>
             <div className="feature-text">
-              <h4 className="feature-title">Money Back Guarantee</h4>
-              <p className="feature-desc">Not satisfied with the quality? We offer a hassle-free money-back guarantee on all our fresh products.</p>
+              <h4 className="feature-title">Affordable Prices</h4>
+              <p className="feature-desc">Get the best value for your money. We offer premium quality products at the most competitive prices.</p>
             </div>
           </div>
           <div className="feature-item">

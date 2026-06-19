@@ -13,7 +13,8 @@ const categories = [
   { name: 'Snacks & Chocolates', img: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
   { name: 'Rice & Flour', img: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
   { name: 'Personal Care', img: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
-  { name: 'Stationary', img: '/media/stationary.jpeg', bgColor: '#fff8e1' }
+  { name: 'Stationary', img: '/media/stationary.jpeg', bgColor: '#fff8e1' },
+  { name: 'Frozen Foods', img: '/media/frozenFoods.png', bgColor: '#eff6ff' }
 ];
 
 const Products = () => {
@@ -61,7 +62,13 @@ const Products = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {categories.map((cat, index) => (
-            <motion.div variants={itemVariants} className="category-card" key={index} style={{ backgroundColor: cat.bgColor }}>
+            <motion.div 
+              variants={itemVariants} 
+              className="category-card" 
+              key={index}
+              whileHover={{ scale: 1.1, y: -8 }}
+              whileTap={{ scale: 0.85, rotate: -5, filter: 'brightness(1.3)', transition: { type: "spring", stiffness: 400, damping: 10 } }}
+            >
               <div className="category-img-wrapper">
                 <img src={cat.img} alt={cat.name} className="category-img" />
               </div>
