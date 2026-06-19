@@ -6,11 +6,13 @@ import AboutUs from './AboutUs'
 import AllProducts from './AllProducts'
 import ContactUs from './ContactUs'
 import Footer from './Footer'
+import WhatsAppFloat from './WhatsAppFloat'
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <WhatsAppFloat />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />

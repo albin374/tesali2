@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Features from './Features';
+import TrendingProducts from './TrendingProducts';
 import Products from './Products';
 import SupplierPromos from './SupplierPromos';
 import Promotions from './Promotions';
@@ -13,6 +14,7 @@ const Home = () => {
       <Features />
       <Products />
       <SupplierPromos />
+      <TrendingProducts />
       <Promotions />
       <JustForYou />
     </>
