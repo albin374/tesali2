@@ -43,7 +43,7 @@ const Products = () => {
             Popular Categories
           </motion.h2>
           
-          <Link to="/products" style={{ textDecoration: 'none' }}>
+          <Link to="/products" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
             <motion.button 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

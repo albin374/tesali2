@@ -79,7 +79,8 @@ const AllProducts = () => {
     if (categoryName === 'Fruits & Vegetables') {
       setProducts(localFruitsAndVeg);
       setTimeout(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        const section = document.querySelector('.dynamic-products-section');
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
       return;
     }
@@ -115,7 +116,8 @@ const AllProducts = () => {
       setLoading(false);
       
       setTimeout(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        const section = document.querySelector('.dynamic-products-section');
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
     } else {
       setProducts([]); // Clear items if category is not mapped yet
@@ -155,11 +157,11 @@ const AllProducts = () => {
           
           {loading ? (
             <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#666', fontFamily: 'Inter, sans-serif' }}>
-              Loading items from Unsplash...
+              Loading products...
             </div>
           ) : products.length === 0 ? (
-            <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#ff4d4f', fontFamily: 'Inter, sans-serif', padding: '40px' }}>
-              We've hit the Unsplash API rate limit (50 requests/hour). Please try again later or provide a new API key!
+            <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#aaaaaa', fontFamily: 'Inter, sans-serif', padding: '40px' }}>
+              Product images for this category are currently being added. Check back soon!
             </div>
           ) : (
             <div style={{

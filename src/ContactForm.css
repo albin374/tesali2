@@ -179,4 +179,11 @@
   .contact-details-grid {
     grid-template-columns: 1fr;
   }
+  .contact-info-column {
+    align-items: center;
+    text-align: center;
+  }
+  .contact-detail-item {
+    align-items: center;
+  }
 }

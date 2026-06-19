@@ -20,14 +20,14 @@ const Footer = () => {
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#products">Products</a></li>
-              <li><a href="#promotions">Promotions</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
           
           <div className="footer-links-group">
             <h3 className="footer-heading">Categories</h3>
             <ul className="footer-list">
-              <li><a href="#fresh">Fresh Produce</a></li>
+              <li><a href="#fresh">Fruits and Vegetables</a></li>
               <li><a href="#dairy">Dairy & Bakery</a></li>
               <li><a href="#snacks">Snacks & Beverages</a></li>
               <li><a href="#household">Household Items</a></li>

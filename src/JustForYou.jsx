@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './JustForYou.css';
 
 const products = [
@@ -37,9 +38,11 @@ const JustForYou = () => {
         
         <div className="jfy-header">
           <h2 className="jfy-title">Just for you</h2>
-          <button className="jfy-show-all">
-            Show All <span className="jfy-arrow">{'>'}</span>
-          </button>
+          <Link to="/products" style={{ textDecoration: 'none' }} onClick={() => window.scrollTo(0, 0)}>
+            <button className="jfy-show-all">
+              Show All <span className="jfy-arrow">{'>'}</span>
+            </button>
+          </Link>
         </div>
 
         <div className="jfy-grid">

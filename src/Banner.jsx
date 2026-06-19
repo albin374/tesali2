@@ -28,7 +28,7 @@ const Banner = () => {
       <section className="banner-section">
         {/* Background Image */}
         <picture>
-          <source media="(max-width: 768px)" srcSet="/media/banner phone.png" />
+          <source media="(max-width: 768px)" srcSet="/media/mobile banner2.png" />
           <img src="/media/black banner.png" alt="Tasali Banner" className="banner-image" />
         </picture>
         
