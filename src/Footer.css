@@ -153,6 +153,7 @@
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
   }
 }

@@ -96,7 +96,9 @@
   .banner-section {
     height: 100vh;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     padding-bottom: 80px;
   }
   .banner-image {
