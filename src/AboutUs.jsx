@@ -123,10 +123,10 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <img src="/media/aboutcard4.png" alt="Fruite Products" className="promo-bg" />
+                <img src="/media/aboutcard4.png" alt="Fruit Products" className="promo-bg" />
                 <div className="promo-content text-left promo-content-center">
                   <span className="promo-subtitle">Daily Essentials</span>
-                  <h3 className="promo-title">All Fruite<br/>Products</h3>
+                  <h3 className="promo-title">All Fruit<br/>Products</h3>
                   <a href="/shop" className="promo-link">SHOP NOW</a>
                 </div>
               </motion.div>

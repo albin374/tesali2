@@ -1,7 +1,7 @@
 .contact-banner-section {
   width: 100%;
-  background-color: #e6f7eb; /* Soft green background */
-  padding: 40px 5% 0px; /* Removed bottom padding */
+  background-color: #38be64;
+  padding: 40px 5% 0px;
   display: flex;
   align-items: flex-end; /* Aligns the image to sit on the bottom edge */
   overflow: hidden;
@@ -43,7 +43,7 @@
   font-size: 4.5rem;
   font-weight: 500;
   line-height: 1.1;
-  color: #111;
+  color: #ffffff;
   margin: 0 0 40px 0;
   letter-spacing: -2px;
 }
@@ -59,11 +59,11 @@
 }
 
 .text-green {
-  color: #22c55e; /* Tasali brand green */
+  color: #ffffff;
 }
 
 .text-green-bold {
-  color: #22c55e;
+  color: #ffffff;
   font-weight: 800;
 }
 
@@ -163,8 +163,6 @@
   max-width: 500px;
   max-height: 550px;
   object-fit: contain;
-  mix-blend-mode: multiply;
-  filter: brightness(1.05);
 }
 
 .contact-map-section {

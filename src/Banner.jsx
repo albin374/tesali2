@@ -8,7 +8,7 @@ const Banner = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.8, // Slower stagger delay between elements
+        staggerChildren: 0.8,
         delayChildren: 0.3,
       },
     },
@@ -19,7 +19,7 @@ const Banner = () => {
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { duration: 1.5, ease: [0.16, 1, 0.3, 1] } // Slower animation speed
+      transition: { duration: 1.5, ease: [0.16, 1, 0.3, 1] }
     },
   };
 
@@ -38,7 +38,7 @@ const Banner = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }} // Triggers when scrolling into view
+          viewport={{ once: true, amount: 0.3 }}
         >
           <motion.span variants={itemVariants} className="hero-tagline">
             Fresher. Affordable. Best

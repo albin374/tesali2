@@ -4,19 +4,18 @@ import { Link } from 'react-router-dom';
 import './Products.css';
 
 const categories = [
-  { name: 'Fruits & Vegetables', img: '/media/fruits and vegitables .jpeg', bgColor: '#eff6ff' },
-  { name: 'Groceries', img: '/media/groceries.jpeg', bgColor: '#f3e8ff' },
-  { name: 'Bread & Bakery', img: '/media/bread and breakery.jpeg', bgColor: '#dcfce7' },
-  { name: 'Households', img: '/media/House Holds.jpeg', bgColor: '#ffe4e6' },
-  { name: 'Dairy & Eggs', img: '/media/dairy .jpeg', bgColor: '#fef3c7' },
-  { name: 'Soft Drinks & Juices', img: '/media/soft drinks.jpeg', bgColor: '#e8f5e9' },
-  { name: 'Snacks & Chocolates', img: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
-  { name: 'Rice & Flour', img: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
-  { name: 'Personal Care', img: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
-  { name: 'Stationary', img: '/media/stationary.jpeg', bgColor: '#fff8e1' },
-  { name: 'Frozen Foods', img: '/media/frozenFoods.png', bgColor: '#eff6ff' },
-  { name: 'Electronics', img: '/media/Electronics.jpeg', bgColor: '#f3e8ff' },
-  { name: 'Toys', img: '/media/toys.jpeg', bgColor: '#dcfce7' }
+  { name: 'Fruits & Vegetables', img: '/media/fruits and vegetiables2.jpeg', bgColor: '#eff6ff' },
+  { name: 'Groceries', img: '/media/cookingesstentials2.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Bread & Bakery', img: '/media/bakery and bread2.jpeg', bgColor: '#dcfce7' },
+  { name: 'Households', img: '/media/house hold items2.jpeg', bgColor: '#ffe4e6' },
+  { name: 'Dairy & Eggs', img: '/media/egg and diary products.jpeg', bgColor: '#fef3c7' },
+  { name: 'Soft Drinks & Juices', img: '/media/softdrinks2.jpeg', bgColor: '#e8f5e9' },
+  { name: 'Snacks & Chocolates', img: '/media/snaksand chocalates2.jpeg', bgColor: '#fce4ec' },
+  { name: 'Rice & Flour', img: '/media/rice and flower2.jpeg', bgColor: '#dcfce7' },
+  { name: 'Personal Care', img: '/media/personalcare2.jpeg', bgColor: '#e0f2fe' },
+  { name: 'Stationery', img: '/media/satationary2.jpeg', bgColor: '#fff8e1' },
+  { name: 'Electronics', img: '/media/eletronics 2.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Toys', img: '/media/toys 2.jpeg', bgColor: '#dcfce7' }
 ];
 
 const Products = () => {
@@ -73,10 +72,6 @@ const Products = () => {
             >
               <div className="category-img-wrapper">
                 <img src={cat.img} alt={cat.name} className="category-img" />
-              </div>
-              <div className="category-info">
-                <h3 className="category-name">{cat.name}</h3>
-                <p className="category-count">{cat.count}</p>
               </div>
             </motion.div>
           ))}

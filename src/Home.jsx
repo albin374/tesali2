@@ -4,6 +4,7 @@ import Features from './Features';
 import Products from './Products';
 import SupplierPromos from './SupplierPromos';
 import Promotions from './Promotions';
+import JustForYou from './JustForYou';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Products />
       <SupplierPromos />
       <Promotions />
+      <JustForYou />
     </>
   );
 };

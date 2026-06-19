@@ -15,19 +15,18 @@ import 'swiper/css';
 import './AllProducts.css';
 
 const categories = [
-  { name: 'Fruits & Vegetables', src: '/media/fruits and vegitables .jpeg', bgColor: '#eff6ff' },
-  { name: 'Groceries', src: '/media/groceries.jpeg', bgColor: '#f3e8ff' },
-  { name: 'Bread & Bakery', src: '/media/bread and breakery.jpeg', bgColor: '#dcfce7' },
-  { name: 'Households', src: '/media/House Holds.jpeg', bgColor: '#ffe4e6' },
-  { name: 'Dairy & Eggs', src: '/media/dairy .jpeg', bgColor: '#fef3c7' },
-  { name: 'Soft Drinks & Juices', src: '/media/soft drinks.jpeg', bgColor: '#e8f5e9' },
-  { name: 'Snacks & Chocolates', src: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
-  { name: 'Rice & Flour', src: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
-  { name: 'Personal Care', src: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
-  { name: 'Stationary', src: '/media/stationary.jpeg', bgColor: '#fff8e1' },
-  { name: 'Frozen Foods', src: '/media/frozenFoods.png', bgColor: '#eff6ff' },
-  { name: 'Electronics', src: '/media/Electronics.jpeg', bgColor: '#f3e8ff' },
-  { name: 'Toys', src: '/media/toys.jpeg', bgColor: '#dcfce7' }
+  { name: 'Fruits & Vegetables', src: '/media/fruits and vegetiables2.jpeg', bgColor: '#eff6ff' },
+  { name: 'Groceries', src: '/media/cookingesstentials2.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Bread & Bakery', src: '/media/bakery and bread2.jpeg', bgColor: '#dcfce7' },
+  { name: 'Households', src: '/media/house hold items2.jpeg', bgColor: '#ffe4e6' },
+  { name: 'Dairy & Eggs', src: '/media/egg and diary products.jpeg', bgColor: '#fef3c7' },
+  { name: 'Soft Drinks & Juices', src: '/media/softdrinks2.jpeg', bgColor: '#e8f5e9' },
+  { name: 'Snacks & Chocolates', src: '/media/snaksand chocalates2.jpeg', bgColor: '#fce4ec' },
+  { name: 'Rice & Flour', src: '/media/rice and flower2.jpeg', bgColor: '#dcfce7' },
+  { name: 'Personal Care', src: '/media/personalcare2.jpeg', bgColor: '#e0f2fe' },
+  { name: 'Stationery', src: '/media/satationary2.jpeg', bgColor: '#fff8e1' },
+  { name: 'Electronics', src: '/media/eletronics 2.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Toys', src: '/media/toys 2.jpeg', bgColor: '#dcfce7' }
 ];
 
 const pastelColors = [

@@ -1,0 +1,164 @@
+.just-for-you-section {
+  padding: 60px 5%;
+  background-color: #000000;
+}
+
+.jfy-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.jfy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.jfy-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.jfy-show-all {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 6px 6px 6px 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.jfy-show-all:hover {
+  background-color: #333;
+}
+
+.jfy-arrow {
+  background-color: #fff;
+  color: #111;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.jfy-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+/* Hide scrollbar for clean look */
+.jfy-grid::-webkit-scrollbar {
+  display: none;
+}
+.jfy-grid {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.jfy-card {
+  flex: 0 0 220px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.jfy-img-container {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jfy-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.jfy-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.jfy-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.jfy-farmer {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0 0 15px 0;
+}
+
+.jfy-price {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.jfy-price strong {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.jfy-price span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.jfy-add-btn {
+  background-color: #222222;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.jfy-add-btn:hover {
+  background-color: #22c55e;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .jfy-card {
+    flex: 0 0 200px;
+  }
+}

@@ -30,7 +30,7 @@ const ContactUs = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="/media/contact.png" alt="Delivery Person" className="contact-main-img" />
+          <img src="/media/removed contact us.png" alt="Delivery Person" className="contact-main-img" />
         </motion.div>
 
       </div>
