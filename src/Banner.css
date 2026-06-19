@@ -57,9 +57,10 @@
 .hero-description {
   font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
-  color: #063c2c; /* Changed to dark green */
+  font-weight: 700;
+  color: orange;
   line-height: 1.6;
-  text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
 
 @media (max-width: 900px) {

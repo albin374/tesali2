@@ -29,7 +29,7 @@ const Banner = () => {
         {/* Background Image */}
         <picture>
           <source media="(max-width: 768px)" srcSet="/media/banner phone.png" />
-          <img src="/media/banner.jpeg" alt="Tasali Banner" className="banner-image" />
+          <img src="/media/black banner.png" alt="Tasali Banner" className="banner-image" />
         </picture>
         
         {/* Text Overlay inside the image */}

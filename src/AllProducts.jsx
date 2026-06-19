@@ -15,14 +15,16 @@ import 'swiper/css';
 import './AllProducts.css';
 
 const categories = [
-  { name: 'Fresh Fruits', src: '/media/img_fruits.png', bgColor: '#eff6ff' },
-  { name: 'Vegetables', src: '/media/img_vegetables.png', bgColor: '#e0f2fe' },
-  { name: 'Grocery', src: '/media/img_oil.png', bgColor: '#f3e8ff' },
-  { name: 'Dairy Products', src: '/media/img_dairy.png', bgColor: '#fef3c7' },
-  { name: 'Bread & Bakery', src: '/media/img_bread.png', bgColor: '#dcfce7' },
-  { name: 'Snacks', src: '/media/img_snacks.png', bgColor: '#fce4ec' },
-  { name: 'Drinks', src: '/media/img_drinks.png', bgColor: '#e8f5e9' },
-  { name: 'Rice & Flour', src: '/media/img_rice.png', bgColor: '#dcfce7' },
+  { name: 'Fruits & Vegetables', src: '/media/fruits and vegitables .jpeg', bgColor: '#eff6ff' },
+  { name: 'Groceries', src: '/media/groceries.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Bread & Bakery', src: '/media/bread and breakery.jpeg', bgColor: '#dcfce7' },
+  { name: 'Households', src: '/media/House Holds.jpeg', bgColor: '#ffe4e6' },
+  { name: 'Dairy & Eggs', src: '/media/dairy .jpeg', bgColor: '#fef3c7' },
+  { name: 'Soft Drinks & Juices', src: '/media/soft drinks.jpeg', bgColor: '#e8f5e9' },
+  { name: 'Snacks & Chocolates', src: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
+  { name: 'Rice & Flour', src: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
+  { name: 'Personal Care', src: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
+  { name: 'Stationary', src: '/media/stationary.jpeg', bgColor: '#fff8e1' }
 ];
 
 const pastelColors = [
@@ -62,14 +64,13 @@ const AllProducts = () => {
     setSelectedCategory(categoryName);
     
     let itemsToFetch = [];
-    if (categoryName === 'Vegetables') itemsToFetch = vegNames;
-    else if (categoryName === 'Fresh Fruits') itemsToFetch = fruitNames;
-    else if (categoryName === 'Grocery') itemsToFetch = groceryNames;
-    else if (categoryName === 'Dairy Products') itemsToFetch = dairyNames;
+    if (categoryName === 'Fruits & Vegetables') itemsToFetch = [...fruitNames, ...vegNames];
+    else if (categoryName === 'Groceries') itemsToFetch = groceryNames;
+    else if (categoryName === 'Dairy & Eggs') itemsToFetch = dairyNames;
     else if (categoryName === 'Bread & Bakery') itemsToFetch = bakeryNames;
-    else if (categoryName === 'Snacks') itemsToFetch = snackNames;
-    else if (categoryName === 'Drinks') itemsToFetch = drinkNames;
-    else if (categoryName === 'Rice & Flour' || categoryName === 'Rice, Flour') itemsToFetch = riceNames;
+    else if (categoryName === 'Snacks & Chocolates') itemsToFetch = snackNames;
+    else if (categoryName === 'Soft Drinks & Juices') itemsToFetch = drinkNames;
+    else if (categoryName === 'Rice & Flour') itemsToFetch = riceNames;
 
     if (itemsToFetch.length > 0) {
       setLoading(true);

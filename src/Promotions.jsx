@@ -58,7 +58,7 @@ const Promotions = () => {
 
           {/* Card 2 */}
           <motion.div variants={itemVariants} className="promo-card card-red">
-            <h3 className="promo-card-title">FREE DELIVERY<br/>ON ORDERS OVER $50</h3>
+            <h3 className="promo-card-title">FREE DELIVERY<br/>ON ALL ORDERS</h3>
             <div className="promo-blob-container blob-alt-1">
               <img src="/media/homedelivery.png" alt="Free Delivery Bike" />
             </div>

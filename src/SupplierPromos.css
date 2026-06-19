@@ -1,6 +1,6 @@
 .supplier-promos-section {
   padding: 0px 5% 80px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .supplier-promos-container {
@@ -50,7 +50,6 @@
   height: auto;
   max-height: 120px;
   object-fit: contain;
-  mix-blend-mode: multiply;
   filter: brightness(1.05) contrast(1.15);
 }
 

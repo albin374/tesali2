@@ -1,6 +1,6 @@
 .features-section {
   padding: 80px 5%;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .features-container {
@@ -54,7 +54,7 @@
 
 .feature-desc {
   font-family: 'Inter', sans-serif;
-  color: #888;
+  color: #ffffff;
   font-size: 0.85rem;
   line-height: 1.6;
   margin: 0;
@@ -83,7 +83,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  mix-blend-mode: multiply;
   filter: brightness(1.05); /* ensures white background is fully removed */
 }
 

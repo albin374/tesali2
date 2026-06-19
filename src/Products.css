@@ -1,6 +1,6 @@
 .categories-section {
   padding: 80px 5%;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .categories-container {
@@ -19,7 +19,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
-  color: #111;
+  color: green;
   letter-spacing: -1px;
   margin: 0;
 }
@@ -93,7 +93,6 @@
   max-width: 120px;
   max-height: 120px;
   object-fit: contain;
-  mix-blend-mode: multiply; /* crucial for blending product images with pastel background */
   filter: brightness(1.05) contrast(1.15); /* Removes the faint gray/off-white box around generated images */
 }
 
@@ -105,7 +104,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
-  color: #111;
+  color: green;
   margin-bottom: 5px;
 }
 

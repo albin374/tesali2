@@ -1,9 +1,9 @@
 .footer-section {
-  background-color: #ffffff;
-  color: #111111;
+  background-color: green;
+  color: #ffffff;
   padding: 50px 20px 20px;
   width: 100%;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container {
@@ -31,14 +31,13 @@
   max-width: 180px;
   height: auto;
   margin-bottom: 10px;
-  mix-blend-mode: multiply; /* In case logo has weird white background border */
 }
 
 .footer-desc {
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #555555;
+  color: #f0f0f0;
 }
 
 .footer-heading {
@@ -46,7 +45,7 @@
   font-size: 1.1rem;
   font-weight: 800;
   margin-bottom: 15px;
-  color: #22c55e; /* Light Green */
+  color: #ffffff; /* Light Green */
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -64,7 +63,7 @@
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: #555555;
+  color: #f0f0f0;
   transition: color 0.2s ease;
 }
 
@@ -76,7 +75,7 @@
 .contact-list li {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: #333333;
+  color: #f0f0f0;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -87,13 +86,13 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 20px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-copyright {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: #777777;
+  color: #e0e0e0;
   margin: 0;
   margin-bottom: 10px;
 }

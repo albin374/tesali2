@@ -4,22 +4,16 @@ import { Link } from 'react-router-dom';
 import './Products.css';
 
 const categories = [
-  { name: 'Fresh Fruits', img: '/media/img_fruits.png', bgColor: '#eff6ff' },
-  { name: 'Vegetables', img: '/media/img_vegetables.png', bgColor: '#e0f2fe' },
-  { name: 'Grocery', img: '/media/img_oil.png', bgColor: '#f3e8ff' },
-  { name: 'Household Items', img: '/media/img_dairy.png', bgColor: '#ffe4e6' },
-  { name: 'Dairy Products', img: '/media/img_dairy.png', bgColor: '#fef3c7' },
-  { name: 'Bread', img: '/media/img_bread.png', bgColor: '#dcfce7' },
-  { name: 'Bakery', img: '/media/img_bread.png', bgColor: '#e0f2fe' },
-  { name: 'Snacks', img: '/media/img_snacks.png', bgColor: '#fce4ec' },
-  { name: 'Chocolates', img: '/media/img_snacks.png', bgColor: '#fff8e1' },
-  { name: 'Soft Drinks', img: '/media/img_drinks.png', bgColor: '#e8f5e9' },
-  { name: 'Juices', img: '/media/img_drinks.png', bgColor: '#eff6ff' },
-  { name: 'Frozen Foods', img: '/media/img_vegetables.png', bgColor: '#f3e8ff' },
-  { name: 'Tea', img: '/media/img_drinks.png', bgColor: '#ffe4e6' },
-  { name: 'Coffee', img: '/media/img_drinks.png', bgColor: '#fef3c7' },
-  { name: 'Rice, Flour', img: '/media/img_rice.png', bgColor: '#dcfce7' },
-  { name: 'Cooking Essentials', img: '/media/img_oil.png', bgColor: '#e0f2fe' }
+  { name: 'Fruits & Vegetables', img: '/media/fruits and vegitables .jpeg', bgColor: '#eff6ff' },
+  { name: 'Groceries', img: '/media/groceries.jpeg', bgColor: '#f3e8ff' },
+  { name: 'Bread & Bakery', img: '/media/bread and breakery.jpeg', bgColor: '#dcfce7' },
+  { name: 'Households', img: '/media/House Holds.jpeg', bgColor: '#ffe4e6' },
+  { name: 'Dairy & Eggs', img: '/media/dairy .jpeg', bgColor: '#fef3c7' },
+  { name: 'Soft Drinks & Juices', img: '/media/soft drinks.jpeg', bgColor: '#e8f5e9' },
+  { name: 'Snacks & Chocolates', img: '/media/snaks and chocaltes.jpeg', bgColor: '#fce4ec' },
+  { name: 'Rice & Flour', img: '/media/rice and flower.jpeg', bgColor: '#dcfce7' },
+  { name: 'Personal Care', img: '/media/personsal care.jpeg', bgColor: '#e0f2fe' },
+  { name: 'Stationary', img: '/media/stationary.jpeg', bgColor: '#fff8e1' }
 ];
 
 const Products = () => {

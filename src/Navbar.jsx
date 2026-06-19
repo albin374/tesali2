@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Icon */}
         <div className="navbar-hamburger" onClick={toggleMenu}>
-          {isOpen ? <X size={28} color={isProductsPage ? '#ffffff' : '#333'} /> : <Menu size={28} color={isProductsPage ? '#ffffff' : '#333'} />}
+          {isOpen ? <X size={28} color="#ffffff" /> : <Menu size={28} color="#ffffff" />}
         </div>
         
         <div className="navbar-spacer desktop-only"></div>
