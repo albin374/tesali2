@@ -129,6 +129,9 @@
   
   .hero-tagline {
     margin-bottom: auto; /* Pushes the rest to the bottom */
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .hero-title {
