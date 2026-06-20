@@ -27,14 +27,11 @@ const Promotions = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="promo-wide-left">
-            <img src="/media/promo_basket.png" alt="Fresh Produce Basket" className="promo-wide-img" />
+            <img src="/media/freesh.png" alt="Fresh Fruits" className="promo-wide-img" />
           </div>
           <div className="promo-wide-right">
             <h2 className="promo-wide-title">Fresh Fruits & Vegetables.<br/>Delivered Daily.</h2>
             <p className="promo-wide-desc">We deliver everything you need straight to your door.</p>
-            <button className="promo-shop-btn">
-              Testimonials
-            </button>
           </div>
         </motion.div>
 

@@ -3,7 +3,7 @@
   width: 100%;
   padding-bottom: 20px;
   background-color: transparent;
-  margin-top: -80px; /* Pull it up to hang on the border */
+  margin-top: 0px; 
   z-index: 10;
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, Plus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './TrendingProducts.css';
 
 const latestProducts = [
@@ -15,7 +16,7 @@ const latestProducts = [
     id: 2,
     name: 'Pomegranate - Small',
     category: 'Summer Fruits',
-    image: '/media/latest_pomegranate_1781877732418.png',
+    image: '/media/pomo.png',
     badge: 'SALE'
   },
   {
@@ -37,9 +38,9 @@ const latestProducts = [
 const trendingProducts = [
   {
     id: 5,
-    name: 'Rustic Crusty Baguette',
-    category: 'Bakery',
-    image: '/media/prod_bread_1781876697910.png',
+    name: 'Banana',
+    category: 'Fruits & Vegetables',
+    image: '/media/fruits and vegitables/banana.png',
     badge: 'FRESH'
   },
   {
@@ -60,7 +61,7 @@ const trendingProducts = [
     id: 8,
     name: 'Premium Dark Chocolate Bar',
     category: 'Snacks',
-    image: '/media/prod_choco_1781876793761.png',
+    image: '/media/chocalte.png',
     badge: null
   }
 ];
@@ -74,7 +75,7 @@ const TrendingProducts = () => {
       <div className="trending-container">
         
         <div className="trending-header">
-          <h2 className="trending-title">Trending Product</h2>
+          <h2 className="trending-title">Trending Products</h2>
           <div className="trending-leaves">🌿</div>
           <div className="trending-tabs">
             <button 
@@ -115,14 +116,13 @@ const TrendingProducts = () => {
                 <span className="card-category">{product.category}</span>
                 <h4 className="card-name">{product.name}</h4>
                 <div className="card-actions">
-                  <a 
-                    href="https://wa.me/971553641135" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <Link 
+                    to="/products"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="shop-now-btn"
                   >
                     Shop Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

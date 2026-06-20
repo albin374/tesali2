@@ -1,5 +1,5 @@
 .promotions-section {
-  padding: 60px 20px 100px;
+  padding: 60px 20px 40px;
   background-color: #000000;
   width: 100%;
 }
@@ -14,7 +14,7 @@
 
 /* Wide Banner */
 .promo-wide-banner {
-  background: linear-gradient(135deg, #d3efff 0%, #e0f2fe 100%);
+  background: #000000;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -36,8 +36,6 @@
   max-width: 500px; /* Reduced image size */
   height: auto;
   object-fit: contain;
-  mix-blend-mode: multiply;
-  filter: brightness(1.1) contrast(1.2); /* Blows out the background to pure white, removing the box edge */
   transform: translateX(-5%);
 }
 
@@ -62,7 +60,7 @@
 .promo-wide-desc {
   font-family: 'Inter', sans-serif;
   font-size: 1.05rem;
-  color: #333;
+  color: #ffffff;
   line-height: 1.5;
   max-width: 400px;
 }

@@ -29,6 +29,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials-section">
       <div className="testimonials-container">
+        <h2 style={{ textAlign: 'center', color: '#ffffff', marginBottom: '70px', fontSize: '2.5rem', fontWeight: 800 }}>Testimonials</h2>
         <div className="testimonials-grid">
           {testimonials.map((testimonial) => (
             <div className="testimonial-card" key={testimonial.id}>

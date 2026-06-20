@@ -142,6 +142,6 @@
   }
   
   .hero-description {
-    text-align: center;
+    display: none;
   }
 }

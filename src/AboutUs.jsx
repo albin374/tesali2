@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Target, Rocket, Eye } from 'lucide-react';
 import './AboutUs.css';
 
 const AboutUs = () => {
@@ -23,10 +24,44 @@ const AboutUs = () => {
 
   return (
     <>
+      {/* Top Banner Section */}
+      <section className="about-page-banner">
+        <div className="about-banner-container">
+          <div className="about-page-header">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              About Us
+            </motion.h2>
+          </div>
+        </div>
+      </section>
+
       <section className="about-showcase-section">
         <div className="about-showcase-container">
           
-          {/* Left Column: Image */}
+          {/* Left Column: Text Content */}
+          <motion.div 
+            className="about-text-column"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <motion.p variants={itemVariants} className="showcase-description" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+              Tasali Supermarket is your trusted neighborhood shopping destination in Al Jurf, Ajman. Formerly known as Abadi Al Madeena, we have rebranded as Tasali with a renewed commitment to delivering exceptional service, quality products, and affordable prices for every customer. Our goal is to make everyday shopping convenient, enjoyable, and value-driven for families and individuals alike.
+            </motion.p>
+            <motion.p variants={itemVariants} className="showcase-description" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+              At Tasali, we offer a wide range of products under one roof, including fresh Fruits & Vegetables, Cooking Essentials, Bakery & Breads, Household Items, Egg & Dairy Products, Soft Drinks & Juices, Snacks & Chocolates, Rice & Flour, Personal Care Products, Stationery, Electronics, and Toys. We carefully select our products to ensure freshness, quality, and great value, making Tasali the perfect place for all your daily shopping needs.
+            </motion.p>
+            <motion.p variants={itemVariants} className="showcase-description" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+              Whether you're shopping for groceries, household necessities, or specialty items, Tasali Supermarket is dedicated to providing a comfortable shopping experience with friendly service and a diverse selection of products for the entire family.
+            </motion.p>
+          </motion.div>
+
+          {/* Right Column: Image */}
           <motion.div 
             className="about-image-column"
             initial="hidden"
@@ -37,26 +72,66 @@ const AboutUs = () => {
             <img src="/media/supermarket imge.jpeg" alt="About Tasali Supermarket" className="floating-veggies-img" />
           </motion.div>
 
-          {/* Right Column: Text Content */}
-          <motion.div 
-            className="about-text-column"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <motion.span variants={itemVariants} className="showcase-tag">About Us</motion.span>
-            <motion.h2 variants={itemVariants} className="showcase-title">
-              About Tasali Supermarket
-            </motion.h2>
-            <motion.p variants={itemVariants} className="showcase-description">
-              Tasali Supermarket is a neighborhood shopping destination located in Al Jurf, Ajman.
-            </motion.p>
-            <motion.p variants={itemVariants} className="showcase-description" style={{ marginTop: '-15px' }}>
-              Formerly known as Abadi Al Madeena, we have transformed into Tasali with a renewed vision to provide better service, quality products, and affordable prices to our customers.
-            </motion.p>
-          </motion.div>
+        </div>
+      </section>
 
+      {/* Mission & Vision Section */}
+      <section className="about-mission-section">
+        <div className="about-mission-container">
+          <div className="mission-grid">
+            
+            <motion.div 
+              className="mission-card" 
+              initial={{opacity:0, y:40}} 
+              whileInView={{opacity:1, y:0}} 
+              viewport={{once:true}}
+              whileHover={{ y: -10, boxShadow: '0px 15px 30px rgba(0,255,0,0.2)' }}
+              transition={{ duration: 0.4 }}
+            >
+              <div className="mission-icon-wrapper">
+                <Target size={40} className="mission-icon" />
+              </div>
+              <div className="mission-content">
+                <h3>Our Goal</h3>
+                <p>To make everyday shopping fresher, more affordable, and more convenient.</p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="mission-card" 
+              initial={{opacity:0, y:40}} 
+              whileInView={{opacity:1, y:0}} 
+              viewport={{once:true}} 
+              transition={{ duration: 0.4, delay: 0.2 }}
+              whileHover={{ y: -10, boxShadow: '0px 15px 30px rgba(0,255,0,0.2)' }}
+            >
+              <div className="mission-icon-wrapper">
+                <Rocket size={40} className="mission-icon" />
+              </div>
+              <div className="mission-content">
+                <h3>Our Mission</h3>
+                <p>To provide quality products and excellent customer service while making grocery shopping easy and accessible for every family.</p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="mission-card" 
+              initial={{opacity:0, y:40}} 
+              whileInView={{opacity:1, y:0}} 
+              viewport={{once:true}} 
+              transition={{ duration: 0.4, delay: 0.4 }}
+              whileHover={{ y: -10, boxShadow: '0px 15px 30px rgba(0,255,0,0.2)' }}
+            >
+              <div className="mission-icon-wrapper">
+                <Eye size={40} className="mission-icon" />
+              </div>
+              <div className="mission-content">
+                <h3>Our Vision</h3>
+                <p>To become the most trusted neighborhood supermarket in Ajman through quality, affordability, and convenience.</p>
+              </div>
+            </motion.div>
+
+          </div>
         </div>
       </section>
 
