@@ -54,7 +54,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
-  color: #111;
+  color: green;
   line-height: 1.1;
   letter-spacing: -1px;
 }
@@ -68,18 +68,17 @@
 }
 
 .promo-shop-btn {
-  background-color: #111;
-  color: #fff;
+  background-color: transparent;
+  color: green;
   border: none;
-  border-radius: 50px;
-  padding: 10px 20px 10px 24px;
+  padding: 10px 0;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 12px;
   margin-top: 5px;
   transition: transform 0.3s ease;
 }

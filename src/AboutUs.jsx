@@ -34,7 +34,7 @@ const AboutUs = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageVariants}
           >
-            <img src="/media/about us bg.png" alt="About Tasali Supermarket" className="floating-veggies-img" />
+            <img src="/media/supermarket imge.jpeg" alt="About Tasali Supermarket" className="floating-veggies-img" />
           </motion.div>
 
           {/* Right Column: Text Content */}

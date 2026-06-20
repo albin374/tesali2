@@ -20,22 +20,11 @@
   gap: 20px;
   transition: transform 0.3s ease;
   min-height: 140px;
+  background: green;
 }
 
 .supplier-card:hover {
   transform: translateY(-5px);
-}
-
-.card-blue {
-  background-color: #eef2ff; /* Very pale blue */
-}
-
-.card-yellow {
-  background-color: #fff8e1; /* Very pale yellow */
-}
-
-.card-green {
-  background-color: #e6fffa; /* Very pale green/mint */
 }
 
 .supplier-img-box {
@@ -62,7 +51,7 @@
 
 .supplier-text-box h3 {
   font-family: 'Inter', sans-serif;
-  color: #1e293b;
+  color: #ffffff;
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.4;
