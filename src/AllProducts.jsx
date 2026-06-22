@@ -71,6 +71,9 @@ const AllProducts = () => {
   const frozenNames = ["frozen pizza", "frozen peas", "frozen berries", "fish sticks", "frozen french fries", "frozen dumplings", "frozen waffle", "frozen dinner"];
   const electronicsNames = ["headphones", "smartphone", "laptop", "smartwatch", "camera", "tablet", "speaker", "television", "mouse", "keyboard", "charger", "power bank", "earbuds", "drone", "monitor"];
   const toysNames = ["lego", "action figure", "teddy bear", "doll", "puzzle", "toy car", "board game", "building blocks", "toy train", "yoyo", "rubiks cube", "stuffed animal"];
+  const householdsNames = ["detergent", "dish soap", "sponge", "paper towels", "toilet paper", "trash bags", "broom", "mop", "bucket", "glass cleaner", "laundry basket", "air freshener", "fabric softener", "bleach", "dustpan"];
+  const personalCareNames = ["shampoo", "soap", "toothpaste", "toothbrush", "body wash", "lotion", "deodorant", "face wash", "shaving cream", "razor", "conditioner", "sunscreen", "lip balm", "hand sanitizer", "wet wipes"];
+  const stationeryNames = ["notebook", "pen", "pencil", "eraser", "highlighter", "marker", "stapler", "scissors", "glue stick", "paper clips", "sticky notes", "calculator", "ruler", "tape", "folder"];
 
   const handleCategoryClick = async (categoryName) => {
     setSelectedCategory(categoryName);
@@ -93,18 +96,21 @@ const AllProducts = () => {
     else if (categoryName === 'Frozen Foods') itemsToFetch = frozenNames;
     else if (categoryName === 'Electronics') itemsToFetch = electronicsNames;
     else if (categoryName === 'Toys') itemsToFetch = toysNames;
+    else if (categoryName === 'Households') itemsToFetch = householdsNames;
+    else if (categoryName === 'Personal Care') itemsToFetch = personalCareNames;
+    else if (categoryName === 'Stationery') itemsToFetch = stationeryNames;
 
     if (itemsToFetch.length > 0) {
+      setProducts([]); // Clear immediately so it doesn't show old images
       setLoading(true);
       try {
         const promises = itemsToFetch.map(async (item) => {
-          // Appending 'isolated' helps find images with plain/white backgrounds
           const query = encodeURIComponent(`${item} isolated`);
           const response = await fetch(`https://api.unsplash.com/search/photos?query=${query}&per_page=1&client_id=i-xaJ8bNvDLYnenOeuadikkbxfkHztO-fPtPNI9IRQU`);
           const data = await response.json();
           return {
             name: item,
-            url: data.results[0]?.urls?.regular || ''
+            url: data.results?.[0]?.urls?.regular || ''
           };
         });
         
@@ -112,6 +118,7 @@ const AllProducts = () => {
         setProducts(results.filter(v => v.url)); 
       } catch (error) {
         console.error(`Error fetching ${categoryName}:`, error);
+        setProducts([]); // Ensure it is cleared on error
       }
       setLoading(false);
       
@@ -120,7 +127,7 @@ const AllProducts = () => {
         if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
     } else {
-      setProducts([]); // Clear items if category is not mapped yet
+      setProducts([]);
     }
   };
 

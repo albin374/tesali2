@@ -152,7 +152,7 @@ const AboutUs = () => {
               <div className="promo-content text-right promo-content-bottom">
                 <span className="promo-subtitle">We Supply 100% Fresh</span>
                 <h3 className="promo-title">Fresh Healthy Foods</h3>
-                <a href="/shop" className="promo-link">SHOP NOW</a>
+                <a href="/products" className="promo-link">SHOP NOW</a>
               </div>
             </motion.div>
 
@@ -170,7 +170,7 @@ const AboutUs = () => {
                   <img src="/media/aboutcard2.png" alt="Fresh Vegetable" className="promo-bg" />
                   <div className="promo-content text-right">
                     <h3 className="promo-title">Full Fresh<br/>Vegetable</h3>
-                    <a href="/shop" className="promo-link">SHOP NOW</a>
+                    <a href="/products" className="promo-link">SHOP NOW</a>
                   </div>
                 </motion.div>
 
@@ -185,7 +185,7 @@ const AboutUs = () => {
                   <img src="/media/aboutcard3.png" alt="Organic Food" className="promo-bg" />
                   <div className="promo-content text-left promo-content-top">
                     <h3 className="promo-title">100% Organic<br/>Food</h3>
-                    <a href="/shop" className="promo-link">SHOP NOW</a>
+                    <a href="/products" className="promo-link">SHOP NOW</a>
                   </div>
                 </motion.div>
               </div>
@@ -202,7 +202,7 @@ const AboutUs = () => {
                 <div className="promo-content text-left promo-content-center">
                   <span className="promo-subtitle">Daily Essentials</span>
                   <h3 className="promo-title">All Fruit<br/>Products</h3>
-                  <a href="/shop" className="promo-link">SHOP NOW</a>
+                  <a href="/products" className="promo-link">SHOP NOW</a>
                 </div>
               </motion.div>
             </div>
