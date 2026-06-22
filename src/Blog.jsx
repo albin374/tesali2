@@ -19,7 +19,7 @@ const initialPosts = [
     month: 'Jul',
     author: 'Winter Infotech',
     comments: 0,
-    title: 'Match Momentzz at Tasali Supermarket!',
+    title: 'Match Moments at Tasali Supermarket!',
     excerpt: 'Grab your favorite snacks and drinks for the perfect game-night combo. From chilled beverages to crunchy chips and sweet treats, we\'ve got everything you need delivered right to your doorstep.',
     img: '/media/proper.png'
   },

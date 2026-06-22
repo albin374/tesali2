@@ -170,7 +170,7 @@ const AboutUs = () => {
                 >
                   <img src="/media/aboutcard2.png" alt="Fresh Vegetable" className="promo-bg" />
                   <div className="promo-content text-right">
-                    <h3 className="promo-title">Full Fresh<br/>Vegetable</h3>
+                    <h3 className="promo-title">Fresh<br/>Vegetables</h3>
                     <Link to="/products" className="promo-link">SHOP NOW</Link>
                   </div>
                 </motion.div>

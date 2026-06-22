@@ -7,7 +7,7 @@ const categories = [
   { name: 'Fruits & Vegetables', img: '/media/fruits and vegetiables2.jpeg', bgColor: '#eff6ff' },
   { name: 'Groceries', img: '/media/cookingesstentials2.jpeg', bgColor: '#f3e8ff' },
   { name: 'Bread & Bakery', img: '/media/bakery and bread2.jpeg', bgColor: '#dcfce7' },
-  { name: 'Households', img: '/media/house hold items2.jpeg', bgColor: '#ffe4e6' },
+  { name: 'Household Items', img: '/media/house hold items2.jpeg', bgColor: '#ffe4e6' },
   { name: 'Dairy & Eggs', img: '/media/egg and diary products.jpeg', bgColor: '#fef3c7' },
   { name: 'Soft Drinks & Juices', img: '/media/softdrinks2.jpeg', bgColor: '#e8f5e9' },
   { name: 'Snacks & Chocolates', img: '/media/snaksand chocalates2.jpeg', bgColor: '#fce4ec' },

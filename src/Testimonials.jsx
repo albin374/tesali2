@@ -12,14 +12,14 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      text: "Very good quality products with affordable prices. Great services and customer support. Faster and free delivery makes this different.",
+      text: "Very good quality products with affordable prices. Great services and customer support. Fast and free delivery makes us different.",
       name: "Sonam Shetty",
       role: "Customer",
       img: "/media/about us bg.png" // placeholder
     },
     {
       id: 3,
-      text: "Amazing and Friendly Staff, clean and good environment, all essential grocery items and households available in affordable prices 👍",
+      text: "Amazing and friendly staff, clean and good environment, all essential grocery items and household items available at affordable prices 👍",
       name: "Meraal Malik",
       role: "Local Guide",
       img: "/media/about us bg.png" // placeholder
