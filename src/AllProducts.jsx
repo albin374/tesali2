@@ -35,101 +35,7 @@ const pastelColors = [
 ];
 
 const AllProducts = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
 
-  const localFruitsAndVeg = [
-    { name: "Apple", url: "/media/fruits and vegitables/apple.jpg" },
-    { name: "Banana", url: "/media/fruits and vegitables/banana.png" },
-    { name: "Orange", url: "/media/fruits and vegitables/orange.png" },
-    { name: "Mango", url: "/media/fruits and vegitables/mango.jpg" },
-    { name: "Pineapple", url: "/media/fruits and vegitables/Pineapple.webp" },
-    { name: "Grapes", url: "/media/fruits and vegitables/Grapes.jpg" },
-    { name: "Watermelon", url: "/media/fruits and vegitables/Watermelon.jpg" },
-    { name: "Papaya", url: "/media/fruits and vegitables/Papaya.webp" },
-    { name: "Guava", url: "/media/fruits and vegitables/Guava.png" },
-    { name: "Pomegranate", url: "/media/fruits and vegitables/Pomegranate.avif" },
-    { name: "Potato", url: "/media/fruits and vegitables/potato.png" },
-    { name: "Tomato", url: "/media/fruits and vegitables/tomato.png" },
-    { name: "Onion", url: "/media/fruits and vegitables/onion.png" },
-    { name: "Carrot", url: "/media/fruits and vegitables/carrot.png" },
-    { name: "Cabbage", url: "/media/fruits and vegitables/cabbage.png" },
-    { name: "Cauliflower", url: "/media/fruits and vegitables/cauliflower.png" },
-    { name: "Broccoli", url: "/media/fruits and vegitables/broccoli.png" },
-    { name: "Spinach", url: "/media/fruits and vegitables/spinach.png" },
-    { name: "Cucumber", url: "/media/fruits and vegitables/cucumber.png" },
-    { name: "Beetroot", url: "/media/fruits and vegitables/beetroot.png" }
-  ];
-
-  const groceryNames = ["olive oil", "pasta", "spices", "canned beans", "ketchup", "salt", "sugar", "honey jar", "vinegar", "peanut butter", "cereal", "oats", "soy sauce", "mayonnaise", "mustard", "jam", "chickpeas", "lentils", "noodles", "tea bags"];
-  const dairyNames = ["milk glass", "cheese block", "butter", "yogurt", "eggs", "sour cream", "cream cheese", "whipped cream", "mozzarella", "cheddar", "parmesan", "feta cheese", "cottage cheese", "ice cream", "ghee", "paneer", "buttermilk", "condensed milk", "margarine", "brie"];
-  const bakeryNames = ["bread loaf", "croissant", "baguette", "bagel", "muffin", "cupcake", "donut", "pretzel", "pita bread", "burger bun", "ciabatta", "sourdough", "cinnamon roll", "macaron", "cookie", "brownie", "tart", "pie", "waffle", "pancakes"];
-  const snackNames = ["potato chips", "popcorn", "chocolate bar", "candy", "cookies", "crackers", "nachos", "trail mix", "granola bar", "gummy bears", "jelly beans", "marshmallow", "mixed nuts", "almonds", "cashews", "pistachios", "walnuts", "peanuts", "sunflower seeds", "biscuit"];
-  const drinkNames = ["water bottle", "orange juice", "apple juice", "cola", "soda", "lemonade", "iced tea", "coffee cup", "espresso", "latte", "cappuccino", "hot chocolate", "smoothie", "milkshake", "energy drink", "sports drink", "green tea", "black tea", "sparkling water", "coconut water"];
-  const riceNames = ["rice bowl", "flour sack", "basmati rice", "brown rice", "jasmine rice", "wheat flour", "corn flour", "rice flour", "almond flour", "coconut flour", "quinoa", "couscous", "barley", "millet", "buckwheat", "bulgur", "semolina", "tapioca", "rye flour", "cornmeal"];
-  const frozenNames = ["frozen pizza", "frozen peas", "frozen berries", "fish sticks", "frozen french fries", "frozen dumplings", "frozen waffle", "frozen dinner"];
-  const electronicsNames = ["headphones", "smartphone", "laptop", "smartwatch", "camera", "tablet", "speaker", "television", "mouse", "keyboard", "charger", "power bank", "earbuds", "drone", "monitor"];
-  const toysNames = ["lego", "action figure", "teddy bear", "doll", "puzzle", "toy car", "board game", "building blocks", "toy train", "yoyo", "rubiks cube", "stuffed animal"];
-  const householdsNames = ["detergent", "dish soap", "sponge", "paper towels", "toilet paper", "trash bags", "broom", "mop", "bucket", "glass cleaner", "laundry basket", "air freshener", "fabric softener", "bleach", "dustpan"];
-  const personalCareNames = ["shampoo", "soap", "toothpaste", "toothbrush", "body wash", "lotion", "deodorant", "face wash", "shaving cream", "razor", "conditioner", "sunscreen", "lip balm", "hand sanitizer", "wet wipes"];
-  const stationeryNames = ["notebook", "pen", "pencil", "eraser", "highlighter", "marker", "stapler", "scissors", "glue stick", "paper clips", "sticky notes", "calculator", "ruler", "tape", "folder"];
-
-  const handleCategoryClick = async (categoryName) => {
-    setSelectedCategory(categoryName);
-    
-    let itemsToFetch = [];
-    if (categoryName === 'Fruits & Vegetables') {
-      setProducts(localFruitsAndVeg);
-      setTimeout(() => {
-        const section = document.querySelector('.dynamic-products-section');
-        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-      return;
-    }
-    else if (categoryName === 'Groceries') itemsToFetch = groceryNames;
-    else if (categoryName === 'Dairy & Eggs') itemsToFetch = dairyNames;
-    else if (categoryName === 'Bread & Bakery') itemsToFetch = bakeryNames;
-    else if (categoryName === 'Snacks & Chocolates') itemsToFetch = snackNames;
-    else if (categoryName === 'Soft Drinks & Juices') itemsToFetch = drinkNames;
-    else if (categoryName === 'Rice & Flour') itemsToFetch = riceNames;
-    else if (categoryName === 'Frozen Foods') itemsToFetch = frozenNames;
-    else if (categoryName === 'Electronics') itemsToFetch = electronicsNames;
-    else if (categoryName === 'Toys') itemsToFetch = toysNames;
-    else if (categoryName === 'Households') itemsToFetch = householdsNames;
-    else if (categoryName === 'Personal Care') itemsToFetch = personalCareNames;
-    else if (categoryName === 'Stationery') itemsToFetch = stationeryNames;
-
-    if (itemsToFetch.length > 0) {
-      setProducts([]); // Clear immediately so it doesn't show old images
-      setLoading(true);
-      try {
-        const promises = itemsToFetch.map(async (item) => {
-          const query = encodeURIComponent(`${item} isolated`);
-          const response = await fetch(`https://api.unsplash.com/search/photos?query=${query}&per_page=1&client_id=i-xaJ8bNvDLYnenOeuadikkbxfkHztO-fPtPNI9IRQU`);
-          const data = await response.json();
-          return {
-            name: item,
-            url: data.results?.[0]?.urls?.regular || ''
-          };
-        });
-        
-        const results = await Promise.all(promises);
-        setProducts(results.filter(v => v.url)); 
-      } catch (error) {
-        console.error(`Error fetching ${categoryName}:`, error);
-        setProducts([]); // Ensure it is cleared on error
-      }
-      setLoading(false);
-      
-      setTimeout(() => {
-        const section = document.querySelector('.dynamic-products-section');
-        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-    } else {
-      setProducts([]);
-    }
-  };
 
   return (
     <div className="products-page-wrapper">
@@ -147,96 +53,13 @@ const AllProducts = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Explore our wide range of fresh and high-quality products. Click on a category!
+            Explore our wide range of fresh and high-quality products.
           </motion.p>
         </div>
       </div>
       <div className="products-page-container">
-        <Carousel_001 images={categories} showPagination loop showNavigation onCategoryClick={handleCategoryClick} />
+        <Carousel_001 images={categories} showPagination loop showNavigation />
       </div>
-
-      {/* Dynamic Products Grid Section */}
-      {selectedCategory && (
-        <div className="dynamic-products-section" style={{ padding: '80px 5%', maxWidth: '1400px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '3rem', textAlign: 'center', marginBottom: '50px', fontFamily: 'Outfit, sans-serif', color: '#ffffff' }}>
-            {selectedCategory} Collection
-          </h2>
-          
-          {loading ? (
-            <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#666', fontFamily: 'Inter, sans-serif' }}>
-              Loading products...
-            </div>
-          ) : products.length === 0 ? (
-            <div style={{ textAlign: 'center', fontSize: '1.2rem', color: '#aaaaaa', fontFamily: 'Inter, sans-serif', padding: '40px' }}>
-              Product images for this category are currently being added. Check back soon!
-            </div>
-          ) : (
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-              gap: '25px'
-            }}>
-              {products.map((item, i) => (
-                <motion.div 
-                  key={i} 
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (i % 10) * 0.05, duration: 0.4 }}
-                  style={{
-                    backgroundColor: 'transparent',
-                    padding: '30px 20px',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '250px',
-                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                    cursor: 'pointer'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-10px)';
-                    e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.08)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
-                >
-                  <div style={{
-                    flex: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: '20px',
-                    width: '100%'
-                  }}>
-                    <img 
-                      src={item.url} 
-                      alt={item.name} 
-                      style={{ 
-                        maxWidth: '90%', 
-                        maxHeight: '130px', 
-                        objectFit: 'contain'
-                      }} 
-                    />
-                  </div>
-                  <h3 style={{ 
-                    margin: 0, 
-                    textTransform: 'capitalize', 
-                    fontSize: '1.2rem', 
-                    fontFamily: 'Inter, sans-serif', 
-                    fontWeight: 700,
-                    color: '#ffffff' 
-                  }}>
-                    {item.name}
-                  </h3>
-                </motion.div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
     </div>
   );
 };
