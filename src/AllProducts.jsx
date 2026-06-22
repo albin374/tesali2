@@ -140,7 +140,6 @@ const Carousel_001 = ({
               alt={image.name}
               style={{ pointerEvents: 'none' }}
             />
-            <h3 style={{ pointerEvents: 'none' }}>{image.name}</h3>
           </SwiperSlide>
         ))}
         {showNavigation && (
